@@ -1,2 +1,2 @@
 ## Answer ##
-![figure](/figures/problem1-1.png)
+![figure](./figures/problem1-1.png)
