@@ -21,4 +21,4 @@ if __name__ == '__main__':
         index = binsearch(a, v)
         if index == -1:
             continue
-        print('found %d at %d in %s' % (v, index, a))
+            print('found %d at %d in %s' % (v, index, a))

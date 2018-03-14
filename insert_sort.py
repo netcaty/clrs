@@ -19,4 +19,4 @@ def _insert(A, beg, end):
 		while i > beg and A[i-1] >= key:
 			A[i] = A[i-1]
 			i -= 1
-		A[i] = key
+          A[i] = key
