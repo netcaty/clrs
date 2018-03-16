@@ -1,7 +1,6 @@
 # coding:utf-8
 
 def max_heapify(a, i):
-    
     while True:
         l = 2 * i + 1
         r = 2 * i + 2
@@ -17,6 +16,7 @@ def max_heapify(a, i):
             i = largest
         else:
             break
+
 
 if __name__ == '__main__':
     pass

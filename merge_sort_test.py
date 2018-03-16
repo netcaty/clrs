@@ -10,10 +10,10 @@ class TestMergeSort(unittest.TestCase):
         A = [randrange(100) for i in range(10)]
         B = sorted(A)
         merge_sort(A)
-        self.assertListEqual(A, B)
+        self.assertEqual(A, B)
 
     def test_insert_sort2(self):
         A = [randrange(100) for i in range(100)]
         B = sorted(A)
         merge_sort(A)
-        self.assertListEqual(A, B)
+        self.assertEqual(A, B)

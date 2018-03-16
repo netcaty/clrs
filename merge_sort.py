@@ -8,9 +8,9 @@ def merge(l,p,q,r):
 
     参数：
         l: 待排序的序列
-        p: 序列的起始位置
-        q: 满足使l[p:q+1],l[q+1:r]有序的位置
-        r: 序列的结束位置(不包括)
+        p: 序列的起始下标
+        q: 满足使l[p:q+1],l[q+1:r]有序的下标
+        r: 序列的结束下标(不包括)
 
     返回:
         无。函数调用结果是序列l[p:r]有序。
@@ -19,7 +19,6 @@ def merge(l,p,q,r):
     b = l[q+1:r]
     i = 0
     j = 0
-
     for k in range(p,r):
         if i == q+1-p or j == r-q-1:
             break
@@ -29,7 +28,6 @@ def merge(l,p,q,r):
         else:
             l[k] = b[j]
             j += 1
-
     if i == q+1-p:
         l[k:r] = b[j:len(b)]
     else:
@@ -42,7 +40,6 @@ def _merge_sort(l,p,r):
         _merge_sort(l,p,q)
         _merge_sort(l,q,r)
         merge(l,p,q-1,r)
-
 
 
 def merge_sort(l):

@@ -1,7 +1,3 @@
-# coding:utf-8
-
-#左闭右开区间l[p...r]
-#len a = q-p +1  len b = r-q
 def merge(l,p,q,r):
     a = l[p:q+1]
     b = l[q+1:r+1]
@@ -24,6 +20,7 @@ def merge(l,p,q,r):
         l[k:r+1] = a[i:]
 
     return cnt
+
 
 def _merge_sort(l,p,r):
     i = 0
